@@ -131,7 +131,11 @@ function draw() {
         obstacleGroup.setLifetimeEach(-1);
         obstacleGroup.setVelocityXEach(0);
 
-        if( touches.lenght > 0 || mousePressedOver(restart)){
+        if(mousePressedOver(restart)){
+            reset();
+           
+        }
+        if( touches.lenght > 0 ){
             reset();
             touches = [];
         }
